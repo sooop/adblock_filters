@@ -1,0 +1,40 @@
+!!  광고
+^mkauld.com^
+^ads-^
+^adinc^
+^gstatic^
+^mmnneo^
+||mmnneo.com$subdocument
+
+!! 다음 쇼핑?
+^zumst^
+||ad*.zum^
+||shopping.zum^$subdocument
+||about.co.kr&subdocument
+
+!! 카카오톡 공유등
+||developers.kakao.com
+
+!! 댓글
+###liverePlugIn
+
+!! 언론사 자체 광고서버
+||ad.hani^
+
+!! #### 시각 필터 ####
+
+!! wikitree
+wikitree.co.kr##.ad80
+wikitree.co.kr##.comment
+wikitree.co.kr##.retweet
+wikitree.co.kr##.shareMenu
+wikitree.co.kr##.categoryMenu
+
+!! etnews
+etnews.com###bannerTopmostBox
+etnews.com###left2
+
+||platform.twitter.com/widgets$subdocument
+
+!! naver
+###da_iframe_time
