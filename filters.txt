@@ -1,3 +1,5 @@
+! Version:20216032909000
+
 !! 광고회사들
 ^mkauld.com^
 ^ads-^
@@ -21,6 +23,7 @@
 
 !! 댓글
 ###liverePlugIn
+101.livere.co.kr
 
 !! 언론사 자체 광고서버
 ||ad.hani^
