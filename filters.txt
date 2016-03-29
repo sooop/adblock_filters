@@ -1,6 +1,6 @@
+! vi: set filetype=adblockfilter:
 ! Version:20216032909000
 
-!! 광고회사들
 ^mkauld.com^
 ^ads-^
 ^adinc^
@@ -12,22 +12,37 @@
 ^adsrvr^
 ||mmnneo.com$subdocument
 
-!! 뭐하는 덴지 모름
+
+!================================================================================
+! 뭐하는 덴지 모름
+!================================================================================
+!다음광고?
 ^zumst^
 ||ad*.zum^
 ||shopping.zum^$subdocument
 ||about.co.kr&subdocument
 
-!! 카카오톡 개발서버 (회사에서는 타임아웃남)
+
+!! 언론사 자체 광고서버
+||ad.hani^
+
+
+!================================================================================
+! 소셜 위젯, 익명 댓글 시스템 차단
+!================================================================================
+||platform.twitter.com/widgets$subdocument
+!! 카카오톡 개발서버(share to Kakao?)
 ||developers.kakao.com
 
 !! 댓글
 ###liverePlugIn
 101.livere.co.kr
 
-!! 언론사 자체 광고서버
-||ad.hani^
 
+
+!================================================================================
+! 사이트별 시각적 필터 모음
+!================================================================================
 !! wikitree
 wikitree.co.kr##.ad80
 wikitree.co.kr##.comment
@@ -46,9 +61,3 @@ wowtv.co.kr##.body_content
 
 !! 헤럴드경제
 res.heraldm.com$subdocument,image
-
-!! 소셜 위젯들 차단
-||platform.twitter.com/widgets$subdocument
-
-!! naver
-###da_iframe_time
