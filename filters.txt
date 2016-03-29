@@ -1,7 +1,8 @@
 ! vi: set filetype=adblockfilter:
 ! Version:20216032909000
-
+*/ads?\d+/*
 ^mkauld.com^
+^akamaihd^
 ^ads-^
 ^adinc^
 ^gstatic^
@@ -10,7 +11,10 @@
 ^tidaltv^
 ^teads^
 ^adsrvr^
-||mmnneo.com$subdocument
+
+
+
+
 
 
 !================================================================================
@@ -21,7 +25,7 @@
 ||ad*.zum^
 ||shopping.zum^$subdocument
 ||about.co.kr&subdocument
-
+||mediaview.co.kr
 
 !! 언론사 자체 광고서버
 ||ad.hani^
@@ -30,13 +34,13 @@
 !================================================================================
 ! 소셜 위젯, 익명 댓글 시스템 차단
 !================================================================================
-||platform.twitter.com/widgets$subdocument
+platform.twitter.com/widgets$subdocument
 !! 카카오톡 개발서버(share to Kakao?)
-||developers.kakao.com
+developers.kakao.com
 
 !! 댓글
 ###liverePlugIn
-101.livere.co.kr
+livere.co.kr
 
 
 
@@ -61,3 +65,11 @@ wowtv.co.kr##.body_content
 
 !! 헤럴드경제
 res.heraldm.com$subdocument,image
+
+!! 디지털타임즈
+dt.co.kr##.subSct
+dt.co.kr##.subCnt
+dt.co.kr##.aside
+
+!! 아이뉴스(노답)
+inews24.com##iframe
