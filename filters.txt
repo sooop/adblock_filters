@@ -1,20 +1,16 @@
 ! vi: set filetype=adblockfilter:
-! Version:20216032909000
+! Version:2021603291217
 */ads?\d+/*
-^mkauld.com^
-^akamaihd^
 ^ads-^
 ^adinc^
-^gstatic^
-^mmnneo^
 ^adnxs^
-^tidaltv^
-^teads^
 ^adsrvr^
-
-
-
-
+^akamaihd^
+^gstatic^
+^mkauld.com^
+^mmnneo^
+^teads^
+^tidaltv^
 
 
 !================================================================================
@@ -26,6 +22,7 @@
 ||shopping.zum^$subdocument
 ||about.co.kr&subdocument
 ||mediaview.co.kr
+daumcdn*ad*js^
 
 !! 언론사 자체 광고서버
 ||ad.hani^
@@ -37,7 +34,6 @@
 platform.twitter.com/widgets$subdocument
 !! 카카오톡 개발서버(share to Kakao?)
 developers.kakao.com
-
 !! 댓글
 ###liverePlugIn
 livere.co.kr
