@@ -1,6 +1,7 @@
 ! vi: set filetype=adblockfilter:
-! Version:2021603291217
+! Version:2021604042337
 */ads?\d+/*
+akamihd^
 ^ads-^
 ^adinc^
 ^adnxs^
@@ -8,10 +9,15 @@
 ^akamaihd^
 ^gstatic^
 ^mkauld.com^
+^mangouni^
 ^mmnneo^
 ^teads^
 ^tidaltv^
-
+^outbanner.hu^
+^2beon^
+^adkova^
+^ads-optima^
+^cauly^
 
 !================================================================================
 ! 뭐하는 덴지 모름
@@ -23,6 +29,7 @@
 ||about.co.kr&subdocument
 ||mediaview.co.kr
 daumcdn*ad*js^
+daum*ad
 
 !! 언론사 자체 광고서버
 ||ad.hani^
@@ -36,6 +43,8 @@ platform.twitter.com/widgets$subdocument
 developers.kakao.com
 !! 댓글
 ###liverePlugIn
+###livere_ad
+
 livere.co.kr
 
 
