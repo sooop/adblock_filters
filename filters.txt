@@ -6,7 +6,6 @@ akamihd^
 ^adinc^
 ^adnxs^
 ^adsrvr^
-^akamaihd^
 ^gstatic^
 ^mkauld.com^
 ^mangouni^
