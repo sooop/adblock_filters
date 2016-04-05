@@ -1,5 +1,6 @@
 ! vi: set filetype=adblockfilter:
-! Version:2021604042337
+! Version:2021604060020
+
 */ads?\d+/*
 akamihd^
 ^ads-^
@@ -20,11 +21,31 @@ akamihd^
 ^adpingpong*^
 ^sunnyworks^
 ^reople^
+ti-center.co.kr
+^adv.
+hnscom.com
+/tools/*ads
+/tools/*ict*.js
+^ad2^
+about.co.kr$script, subdocument
+^2beon^
+^outbanner.hu^
+^akamaihd.net^
+^ntwoad^
+daumcdn*ad
+daum*ad
+^luxad^
+^imadrep^
+keywordsconnect^
+^mman^
+^mymyad^
+^interworksmedia^
+^adpnut^
 
 !================================================================================
 ! 뭐하는 덴지 모름
 !================================================================================
-!다음광고?
+!! 다음광고?
 ^zumst^
 ||ad*.zum^
 ||shopping.zum^$subdocument
@@ -37,17 +58,33 @@ daum*ad
 ||ad.hani^
 
 
+
+
+
 !================================================================================
-! 소셜 위젯, 익명 댓글 시스템 차단
+! API, SDK - 소셜 위젯, 익명 댓글 시스템 차단
 !================================================================================
+api.nateon.nate.com
+dawin.tv
+livere.co.kr
 platform.twitter.com/widgets$subdocument
-!! 카카오톡 개발서버(share to Kakao?)
 developers.kakao.com
 !! 댓글
 ###liverePlugIn
 ###livere_ad
 
-livere.co.kr
+
+
+
+
+!================================================================================
+! API, SDK
+!================================================================================
+||developers.kakao.com
+||api.nateon.nate.com
+dawin.tv
+
+
 
 
 
@@ -87,3 +124,57 @@ hani.co.kr*article.js
 !! 연합뉴스
 ##.hide-appview
 yna.co.kr###header
+
+
+!! mt.co.kr
+mt.co.kr##.photovod
+mt.co.kr###spotnews
+mt.co.kr###aside
+##.related_ad
+mt.co.kr##.related
+mt.co.kr##.conbox3
+
+
+!! ytn.co.kr
+ytn.co.kr##.news_slide
+ytn.co.kr##.photo_news
+^cdnfootball^
+||img.event.ytn
+
+!! 경향
+khan.co.kr##.art_side
+khan.co.kr##.mc2
+
+!! sbs
+sbs.co.kr##.end_footcont_w
+
+!! chosun.com
+^cad.chosun^
+^nearad.chosun^
+/js/*ad
+chosun.com##.art_ad_promo_ifbox
+chosun.com/event
+chosun.com##iframe
+chosun.com##.news_comment
+
+!! asiae.co.kr
+asiae.co.kr###aside
+asiae.co.kr##.pop_add
+
+
+!! hani.co.kr
+!!hani.co.kr##.slide_mid
+hani.co.kr##.hani_ranking_slide
+hani.co.kr##.huffingtonpost
+
+!! 데일리안
+photonews_js.js
+dailian.co.kr###view_bot_news
+dailian.co.kr###view_morenews
+dailian.co.kr###side_photo
+dailian.co.kr##.responsive_col2
+
+!! etnews.com
+etnews.com###right
+##.top_ad
+etnews.com##.relBottom
