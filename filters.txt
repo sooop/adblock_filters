@@ -17,6 +17,9 @@ akamihd^
 ^adkova^
 ^ads-optima^
 ^cauly^
+^adpingpong*^
+^sunnyworks^
+^reople^
 
 !================================================================================
 ! 뭐하는 덴지 모름
@@ -77,3 +80,10 @@ dt.co.kr##.aside
 
 !! 아이뉴스(노답)
 inews24.com##iframe
+
+!! 한겨레 (얘네도 좀 노답)
+hani.co.kr*article.js
+
+!! 연합뉴스
+##.hide-appview
+yna.co.kr###header
