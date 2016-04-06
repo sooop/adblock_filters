@@ -1,47 +1,57 @@
 ! vi: set filetype=adblockfilter:
 ! Version:2021604060020
 
+
 */ads?\d+/*
-akamihd^
-^ads-^
-^adinc^
-^adnxs^
-^adsrvr^
-^gstatic^
-^mkauld.com^
-^mangouni^
-^mmnneo^
-^teads^
-^tidaltv^
-^outbanner.hu^
-^2beon^
-^adkova^
-^ads-optima^
-^cauly^
-^adpingpong*^
-^sunnyworks^
-^reople^
-ti-center.co.kr
-^adv.
-hnscom.com
+/js/*ad
 /tools/*ads
 /tools/*ict*.js
-^ad2^
-about.co.kr$script, subdocument
 ^2beon^
-^outbanner.hu^
-^akamaihd.net^
-^ntwoad^
-daumcdn*ad
-daum*ad
-^luxad^
-^imadrep^
-keywordsconnect^
-^mman^
-^mymyad^
-^interworksmedia^
+^ad2^
+^adinc^
+^adkova^
+^adnxs^
+^adpingpong*^
 ^adpnut^
-
+^ads-^
+^ads-optima^
+^adsrvr^
+^adv.
+^akamaihd.net^
+^cad.chosun^
+^cauly^
+^chosun.com/event
+^gstatic^
+^heraldm^
+^imadrep^
+^interworksmedia^
+^luxad^
+^mangouni^
+^mkauld.com^
+^mman^
+^mmnneo^
+^mymyad^
+^nearad.chosun^
+^nowcall^
+^ntwoad^
+^obel^
+^outbanner.hu^
+^outbanner.hu^
+^reople^
+^sunnyworks^
+^teads^
+^tidaltv^
+^toast.com/ad^
+^exchange.toast
+about.co.kr$script, subdocument
+akamihd^
+daum*ad
+daumcdn*ad
+hnscom.com
+keywordsconnect^
+ti-center.co.kr
+^icontact.kr^
+^youtube_iframe^
 !================================================================================
 ! 뭐하는 덴지 모름
 !================================================================================
@@ -58,48 +68,74 @@ daum*ad
 ||ad.hani^
 
 
-
-
-
 !================================================================================
 ! API, SDK - 소셜 위젯, 익명 댓글 시스템 차단
 !================================================================================
-api.nateon.nate.com
-dawin.tv
-livere.co.kr
-platform.twitter.com/widgets$subdocument
-developers.kakao.com
 !! 댓글
 ###liverePlugIn
 ###livere_ad
 
-
-
-
-
 !================================================================================
 ! API, SDK
 !================================================================================
-||developers.kakao.com
-||api.nateon.nate.com
+platform.twitter.com/widgets$subdocument
+developers.kakao.com
+api.nateon.nate.com
 dawin.tv
+livere.co.kr
 
-
-
+!================================================================================
+! iframe 차단목록
+!================================================================================
+.kr##iframe[src]
+inews24.com##iframe
+heraldcorp.com##iframe
 
 
 !================================================================================
-! 사이트별 시각적 필터 모음
+! 공통 시각 필터
+!================================================================================
+
+##.related_ad
+##.ad_list_t1
+##.ad_list
+
+!================================================================================
+! 모바일 사이트별 시각적 필터 모음
 !================================================================================
 !! wikitree
 wikitree.co.kr##.ad80
 wikitree.co.kr##.comment
 wikitree.co.kr##.retweet
+
+
+!! etnews
+etnews.com###bannerTopmostBox
+
+!! 연합뉴스
+ytn.co.kr##.hide-appview
+ytn.co.kr##.circle_button
+
+!! 한겨레 (얘네도 좀 노답)
+hani.co.kr*article.js
+
+!! mt.co.kr
+mt.co.kr##.related
+mt.co.kr##.conbox3
+
+!! chosun.com
+chosun.com##.art_ad_promo_ifbox
+chosun.com##iframe
+chosun.com##.news_comment
+
+!================================================================================
+! 사이트별 시각적 필터 모음
+!================================================================================
+!! wikitree
 wikitree.co.kr##.shareMenu
 wikitree.co.kr##.categoryMenu
 
 !! etnews
-etnews.com###bannerTopmostBox
 etnews.com###left2
 
 !! 한국경제
@@ -118,28 +154,20 @@ dt.co.kr##.aside
 !! 아이뉴스(노답)
 inews24.com##iframe
 
-!! 한겨레 (얘네도 좀 노답)
-hani.co.kr*article.js
-
 !! 연합뉴스
 ##.hide-appview
-yna.co.kr###header
-
 
 !! mt.co.kr
 mt.co.kr##.photovod
 mt.co.kr###spotnews
 mt.co.kr###aside
-##.related_ad
-mt.co.kr##.related
-mt.co.kr##.conbox3
 
 
 !! ytn.co.kr
 ytn.co.kr##.news_slide
 ytn.co.kr##.photo_news
-^cdnfootball^
 ||img.event.ytn
+^cdnfootball^
 
 !! 경향
 khan.co.kr##.art_side
@@ -148,14 +176,6 @@ khan.co.kr##.mc2
 !! sbs
 sbs.co.kr##.end_footcont_w
 
-!! chosun.com
-^cad.chosun^
-^nearad.chosun^
-/js/*ad
-chosun.com##.art_ad_promo_ifbox
-chosun.com/event
-chosun.com##iframe
-chosun.com##.news_comment
 
 !! asiae.co.kr
 asiae.co.kr###aside
@@ -178,3 +198,16 @@ dailian.co.kr##.responsive_col2
 etnews.com###right
 ##.top_ad
 etnews.com##.relBottom
+
+
+!! 헤럴드경제 (초 노답)
+##.nnews_bottomadlist_area
+##.sub_viewpag_headline
+###webtoon_todaywrap
+heraldcorp.com##.right_side_section
+heraldcorp.com##.youtube
+heraldcorp.com###head_section
+heraldcorp.com##.infor_area
+
+!! 문화일보
+munhwa.com###news_content>div
