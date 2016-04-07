@@ -17,7 +17,6 @@
 ^ads-optima^
 ^adsrvr^
 ^adv.
-^akamaihd.net^
 ^cad.chosun^
 ^cauly^
 ^chosun.com/event
