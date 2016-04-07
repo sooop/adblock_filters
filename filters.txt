@@ -2,7 +2,7 @@
 ! Version:2021604060020
 
 
-*/ads?\d+/*
+/(\/|\.)ad(s|v)?\d+\./
 /js/*ad
 /tools/*ads
 /tools/*ict*.js
@@ -35,15 +35,14 @@
 ^ntwoad^
 ^obel^
 ^outbanner.hu^
-^outbanner.hu^
 ^reople^
 ^sunnyworks^
 ^teads^
 ^tidaltv^
 ^toast.com/ad^
 ^exchange.toast
-about.co.kr$script, subdocument
-akamihd^
+about.co.kr$script,subdocument
+^akamaihd.net^$domain=~www.facebook.com
 daum*ad
 daumcdn*ad
 hnscom.com
@@ -98,15 +97,17 @@ heraldcorp.com##iframe
 ##.related_ad
 ##.ad_list_t1
 ##.ad_list
+##div[class^=ad]
+##div[id^=ad]
+##.contBanner
+##.
 
 !================================================================================
 ! 모바일 사이트별 시각적 필터 모음
 !================================================================================
 !! wikitree
-wikitree.co.kr##.ad80
 wikitree.co.kr##.comment
 wikitree.co.kr##.retweet
-
 
 !! etnews
 etnews.com###bannerTopmostBox
@@ -114,9 +115,10 @@ etnews.com###bannerTopmostBox
 !! 연합뉴스
 ytn.co.kr##.hide-appview
 ytn.co.kr##.circle_button
+ytn.co.kr###circle_button
 
 !! 한겨레 (얘네도 좀 노답)
-hani.co.kr*article.js
+^article.js$domain=m.hani.co.kr|hani.co.kr
 
 !! mt.co.kr
 mt.co.kr##.related
@@ -126,6 +128,12 @@ mt.co.kr##.conbox3
 chosun.com##.art_ad_promo_ifbox
 chosun.com##iframe
 chosun.com##.news_comment
+
+
+!! 경향
+khan.co.kr##.art_side
+khan.co.kr##.mc2
+
 
 !================================================================================
 ! 사이트별 시각적 필터 모음
@@ -161,25 +169,18 @@ mt.co.kr##.photovod
 mt.co.kr###spotnews
 mt.co.kr###aside
 
-
 !! ytn.co.kr
 ytn.co.kr##.news_slide
 ytn.co.kr##.photo_news
 ||img.event.ytn
 ^cdnfootball^
 
-!! 경향
-khan.co.kr##.art_side
-khan.co.kr##.mc2
-
 !! sbs
 sbs.co.kr##.end_footcont_w
-
 
 !! asiae.co.kr
 asiae.co.kr###aside
 asiae.co.kr##.pop_add
-
 
 !! hani.co.kr
 !!hani.co.kr##.slide_mid
@@ -197,7 +198,6 @@ dailian.co.kr##.responsive_col2
 etnews.com###right
 ##.top_ad
 etnews.com##.relBottom
-
 
 !! 헤럴드경제 (초 노답)
 ##.nnews_bottomadlist_area
