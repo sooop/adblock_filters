@@ -1,5 +1,5 @@
 ! vi: set filetype=adblockfilter:
-! Version:2021604060020
+! Version:2021604071523
 
 
 /(\/|\.)ad(s|v)?\d+\./
