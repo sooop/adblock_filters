@@ -97,19 +97,15 @@ heraldcorp.com##iframe
 ##.related_ad
 ##.ad_list_t1
 ##.ad_list
-!!##div[class^=ad]
-!!##div[id^=ad]
 ##.contBanner
 ##.
-
-wikitree##div[class^=ad]
-wikitree##div[class*=ad]
+.kr##div[class^=ad]$domain=~news.google.co.kr
 !================================================================================
 ! 모바일 사이트별 시각적 필터 모음
 !================================================================================
 !! wikitree
-wikitree.co.kr##.comment
-wikitree.co.kr##.retweet
+##.comment
+##.retweet
 
 !! etnews
 etnews.com###bannerTopmostBox
