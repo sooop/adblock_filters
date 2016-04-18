@@ -1,6 +1,7 @@
 ! vi: set filetype=adblockfilter:
-! Version:2021604071523
+! Version:202160418
 
+||58.120.226.147
 
 /(\/|\.)ad(s|v)?\d+\./
 /js/*ad
@@ -9,7 +10,9 @@
 ^2beon^
 ^ad2^
 ^adinc^
+^adistory^
 ^adkova^
+^adnmore^
 ^adnxs^
 ^adpingpong*^
 ^adpnut^
@@ -26,17 +29,20 @@
 ^interworksmedia^
 ^luxad^
 ^mangouni^
-^mkauld.com^
+^mklaud.com^
 ^mman^
 ^mmnneo^
+^mncmedia^
 ^mymyad^
 ^nearad.chosun^
 ^nowcall^
 ^ntwoad^
 ^obel^
 ^outbanner.hu^
+^priel^
 ^reople^
 ^sunnyworks^
+^sndkorea^
 ^teads^
 ^tidaltv^
 ^toast.com/ad^
@@ -50,6 +56,7 @@ keywordsconnect^
 ti-center.co.kr
 ^icontact.kr^
 ^youtube_iframe^
+
 !================================================================================
 ! 뭐하는 덴지 모름
 !================================================================================
@@ -65,6 +72,10 @@ daum*ad
 !! 언론사 자체 광고서버
 ||ad.hani^
 
+!===============================================================================
+  추적, 카운터
+!===============================================================================
+acecounter*.php
 
 !================================================================================
 ! API, SDK - 소셜 위젯, 익명 댓글 시스템 차단
@@ -86,8 +97,8 @@ livere.co.kr
 ! iframe 차단목록
 !================================================================================
 .kr##iframe[src]
-inews24.com##iframe
-heraldcorp.com##iframe
+inews24.com##iframe[src]
+heraldcorp.com##iframe[src]
 
 
 !================================================================================
@@ -98,39 +109,11 @@ heraldcorp.com##iframe
 ##.ad_list_t1
 ##.ad_list
 ##.contBanner
-##.
-.kr##div[class^=ad]$domain=~news.google.co.kr
-!================================================================================
-! 모바일 사이트별 시각적 필터 모음
-!================================================================================
-!! wikitree
-##.comment
-##.retweet
-
-!! etnews
-etnews.com###bannerTopmostBox
-
-!! 연합뉴스
-ytn.co.kr##.hide-appview
-ytn.co.kr##.circle_button
-ytn.co.kr###circle_button
-
-!! 한겨레 (얘네도 좀 노답)
-^article.js$domain=m.hani.co.kr|hani.co.kr
-
-!! mt.co.kr
-mt.co.kr##.related
-mt.co.kr##.conbox3
-
-!! chosun.com
-chosun.com##.art_ad_promo_ifbox
-chosun.com##iframe
-chosun.com##.news_comment
-
-
-!! 경향
-khan.co.kr##.art_side
-khan.co.kr##.mc2
+###facebook_main
+*.kr##div[class^=ad]$domain=~news.google.co.kr
+.kr##div[id^=ad]
+###SHOWUP
+##.m_scroll_top
 
 
 !================================================================================
@@ -208,3 +191,55 @@ heraldcorp.com##.infor_area
 
 !! 문화일보
 munhwa.com###news_content>div
+
+
+!================================================================================
+! 모바일 사이트별 시각적 필터 모음
+!================================================================================
+!! wikitree
+##.comment
+##.retweet
+
+!! etnews
+etnews.com###bannerTopmostBox
+
+!! 연합뉴스
+ytn.co.kr##.hide-appview
+ytn.co.kr##.circle_button
+ytn.co.kr###circle_button
+
+!! 한겨레 (얘네도 좀 노답)
+^article.js$domain=m.hani.co.kr|hani.co.kr
+
+!! mt.co.kr
+mt.co.kr##.related
+mt.co.kr##.conbox3
+
+!! chosun.com
+chosun.com##.art_ad_promo_ifbox
+chosun.com##iframe
+chosun.com##.news_comment
+
+
+!! 경향
+khan.co.kr##.art_side
+khan.co.kr##.mc2
+
+!! 미디어펜
+mediapen.com##.hdline
+
+!! 국민일보
+kr##.best_pht
+kr##.mo_bnr
+kr##.nwbx02
+###waveAd
+##.list_sns
+kr##.ban
+
+!! 파이낸셜 뉴스
+fnnews.com
+fnnews.com##.hot_photo
+fnnews.com##.bg_borderTop
+
+!! 충청투데이
+.kr##.m_aside
