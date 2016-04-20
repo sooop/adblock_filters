@@ -1,9 +1,11 @@
 ! vi: set filetype=adblockfilter:
 ! Version: 20160420
 
+
 ||58.120.226.147
 
 /(\/|\.)ad(s|v)?\d+\./
+!! ~read 가 차단되는 것을 방지.
 /\/js\/.*(?!re)..ad/
 /tools/*ads
 /tools/*ict*.js
