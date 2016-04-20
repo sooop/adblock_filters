@@ -1,5 +1,5 @@
 ! vi: set filetype=adblockfilter:
-! Version:202160418
+! Version: 20160420
 
 ||58.120.226.147
 
