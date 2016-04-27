@@ -202,7 +202,7 @@ munhwa.com###news_content>div
 ##.fixed1
 
 !! wikitree
-##.comment
+.kr##.comment
 ##.retweet
 
 !! etnews
