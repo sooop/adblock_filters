@@ -1,6 +1,6 @@
 ! vi: filetype=adblockfilter:
 ! Title: sooop's private filters
-! Version: 20160922.001
+! Version: 20160922.002
 
 /tools/*ict*.js
 ||58.120.226.147
