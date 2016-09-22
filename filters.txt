@@ -246,4 +246,4 @@ fnnews.com##.bg_borderTop
 
 ! 화이트 리스트
 @@$domain=||live.com
-@@$#domain=||google.com
+@@$domain=||google.com
