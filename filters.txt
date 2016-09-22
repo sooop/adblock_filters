@@ -1,14 +1,10 @@
-! vi: set filetype=adblockfilter:
-! Version: 20160427
+! vi: filetype=adblockfilter:
+! Version: 20160922.001
 
 
-||58.120.226.147
 
-/(\/|\.)ad(s|v)?\d+\./
-!! ~read 가 차단되는 것을 방지.
-/\/js\/.*(?!re)..ad/
-/tools/*ads
 /tools/*ict*.js
+||58.120.226.147
 ^2beon^
 ^ad2^
 ^adinc^
@@ -122,30 +118,38 @@ heraldcorp.com##iframe[src]
 ! 사이트별 시각적 필터 모음
 !================================================================================
 !! wikitree
-wikitree.co.kr##.shareMenu
-wikitree.co.kr##.categoryMenu
+||wikitree.co.kr##.shareMenu
+||wikitree.co.kr##.categoryMenu
+||wikitree.co.kr.kr##.comment
+||wikitree.co.kr##.retweet
+
 
 !! etnews
-etnews.com###left2
+||etnews.com###left2
+||etnews.com###bannerTopmostBox
+||etnews.com###right
+||etnews.com##.top_ad
+||etnews.com##.relBottom
+
 
 !! 한국경제
-wowtv.co.kr##.body_content
-##.wrap-issueplus
+||wowtv.co.kr##.body_content
+||wowtv.co.kr##.wrap-issueplus
 ^photoslide_
 
 !! 헤럴드경제
-res.heraldm.com$subdocument,image
+||res.heraldm.com$subdocument,image
 
 !! 디지털타임즈
-dt.co.kr##.subSct
-dt.co.kr##.subCnt
-dt.co.kr##.aside
+||dt.co.kr##.subSct
+||dt.co.kr##.subCnt
+||dt.co.kr##.aside
 
 !! 아이뉴스(노답)
 inews24.com##iframe
 
 !! 연합뉴스
-##.hide-appview
+||##.hide-appview
 
 !! mt.co.kr
 mt.co.kr##.photovod
@@ -177,11 +181,6 @@ dailian.co.kr###view_morenews
 dailian.co.kr###side_photo
 dailian.co.kr##.responsive_col2
 
-!! etnews.com
-etnews.com###right
-##.top_ad
-etnews.com##.relBottom
-
 !! 헤럴드경제 (초 노답)
 ##.nnews_bottomadlist_area
 ##.sub_viewpag_headline
@@ -201,12 +200,9 @@ munhwa.com###news_content>div
 ###moveTop
 ##.fixed1
 
-!! wikitree
-.kr##.comment
-##.retweet
 
 !! etnews
-etnews.com###bannerTopmostBox
+
 
 !! 연합뉴스
 ytn.co.kr##.hide-appview
@@ -251,3 +247,7 @@ fnnews.com##.bg_borderTop
 
 !! 투데이에너지
 .kr##.container_right
+
+! 화이트 리스트
+~##domain=live.com
+~##domain=google.com
