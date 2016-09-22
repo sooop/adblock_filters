@@ -1,6 +1,6 @@
 ! vi: filetype=adblockfilter:
 ! Title: sooop's private filters
-! Version: 20160922.003
+! Version: 20160922004
 
 /tools/*ict*.js
 ||58.120.226.147
@@ -245,5 +245,5 @@ fnnews.com##.bg_borderTop
 .kr##.container_right
 
 ! 화이트 리스트
-~##domain=live.com
-~##domain=google.com
+@@$domain=||live.com
+@@$#domain=||google.com
