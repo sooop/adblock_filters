@@ -1,7 +1,6 @@
 ! vi: filetype=adblockfilter:
+! Title: sooop's private filters
 ! Version: 20160922.001
-
-
 
 /tools/*ict*.js
 ||58.120.226.147
@@ -47,11 +46,8 @@
 ^exchange.toast
 about.co.kr$script,subdocument
 ^akamaihd.net^$domain=~www.facebook.com
-daum*ad
-daumcdn*ad
-hnscom.com
-keywordsconnect^
-ti-center.co.kr
+^keywordsconnect^
+||ti-center.co.kr
 ^icontact.kr^
 ^youtube_iframe^
 
@@ -64,8 +60,9 @@ ti-center.co.kr
 ||shopping.zum^$subdocument
 ||about.co.kr&subdocument
 ||mediaview.co.kr
-daumcdn*ad*js^
-daum*ad
+! 다음 cdn 광고는 주소 분석 후 패턴 다시 만들자.
+!daumcdn*ad*js^
+!daum*ad
 
 !! 언론사 자체 광고서버
 ||ad.hani^
