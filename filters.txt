@@ -1,7 +1,14 @@
-! vi: filetype=adblockfilter:
-! Title: sooop's private filters
-! Version: 20160922005
+! vi: filetype=abp nu colorcolumn=
+! Title: sooop's private filter
+! Version: 20160922.001
 
+/(\/|\.)ad(s|v)?\d+\./
+!! ~read 가 차단되는 것을 방지.
+
+/\/js\/.*(?!re)..ad/
+
+! 광고회사들 서버
+||58.120.226.147
 /tools/*ict*.js
 ||58.120.226.147
 ^2beon^
@@ -52,8 +59,7 @@ about.co.kr$script,subdocument
 
 !================================================================================
 ! 뭐하는 덴지 모름
-!================================================================================
-!! 다음광고?
+!================================================================================ !! 다음광고?
 ^zumst^
 ||ad*.zum^
 ||shopping.zum^$subdocument
@@ -81,16 +87,16 @@ acecounter*.php
 !================================================================================
 ! API, SDK
 !================================================================================
-platform.twitter.com/widgets$subdocument
-developers.kakao.com
-api.nateon.nate.com
-dawin.tv
-livere.co.kr
+||platform.twitter.com/widgets$subdocument
+||developers.kakao.com
+||api.nateon.nate.com
+||dawin.tv
+||livere.co.kr
 
 !================================================================================
 ! iframe 차단목록
 !================================================================================
-.kr##iframe[src]
+! .kr##iframe[src]
 inews24.com##iframe[src]
 heraldcorp.com##iframe[src]
 
@@ -104,14 +110,14 @@ heraldcorp.com##iframe[src]
 ##.ad_list
 ##.contBanner
 ###facebook_main
-*.kr##div[class^=ad]$domain=~news.google.co.kr
+.kr##div[class^=ad]$domain=~news.google.co.kr
 .kr##div[id^=ad]
 ###SHOWUP
 ##.m_scroll_top
 
 
 !================================================================================
-! 사이트별 시각적 필터 모음
+! 한국 언론 사이트별 시각적 필터 모음
 !================================================================================
 !! wikitree
 ||wikitree.co.kr##.shareMenu
@@ -177,10 +183,15 @@ dailian.co.kr###view_morenews
 dailian.co.kr###side_photo
 dailian.co.kr##.responsive_col2
 
-!! 헤럴드경제 (초 노답)
+!! etnews.com
+||etnews.com###right
+||etnews.com##.top_ad
+||etnews.com##.relBottom
+
 ##.nnews_bottomadlist_area
 ##.sub_viewpag_headline
 ###webtoon_todaywrap
+
 heraldcorp.com##.right_side_section
 heraldcorp.com##.youtube
 heraldcorp.com###head_section
@@ -195,10 +206,6 @@ munhwa.com###news_content>div
 !================================================================================
 ###moveTop
 ##.fixed1
-
-
-!! etnews
-
 
 !! 연합뉴스
 ytn.co.kr##.hide-appview
@@ -234,16 +241,17 @@ kr##.nwbx02
 kr##.ban
 
 !! 파이낸셜 뉴스
-fnnews.com
-fnnews.com##.hot_photo
-fnnews.com##.bg_borderTop
+||fnnews.com
+||fnnews.com##.hot_photo
+||fnnews.com##.bg_borderTop
 
 !! 충청투데이
-.kr##.m_aside
+!.kr##.m_aside
 
 !! 투데이에너지
-.kr##.container_right
+!.kr##.container_right
 
 ! 화이트 리스트
 @@$domain=||live.com
 @@$domain=||google.com
+@@$domain=||instapapaer.com
