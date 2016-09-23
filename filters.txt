@@ -1,16 +1,12 @@
 ! vi: filetype=abp nu colorcolumn=
-! Title: sooop's private filter
-! Version: 20160922.001
+! Title: sooop's private filter 0923-002
+! Version: 20160923002
 
-/(\/|\.)ad(s|v)?\d+\./
-!! ~read 가 차단되는 것을 방지.
-
-/\/js\/.*(?!re)..ad/
 
 ! 광고회사들 서버
 ||58.120.226.147
-/tools/*ict*.js
 ||58.120.226.147
+||ti-center.co.kr
 ^2beon^
 ^ad2^
 ^adinc^
@@ -53,7 +49,6 @@
 about.co.kr$script,subdocument
 ^akamaihd.net^$domain=~www.facebook.com
 ^keywordsconnect^
-||ti-center.co.kr
 ^icontact.kr^
 ^youtube_iframe^
 
@@ -152,93 +147,81 @@ inews24.com##iframe
 
 !! 연합뉴스
 ||##.hide-appview
+||ytn.co.kr##.hide-appview
+||ytn.co.kr##.circle_button
+||ytn.co.kr###circle_button
+
 
 !! mt.co.kr
-mt.co.kr##.photovod
-mt.co.kr###spotnews
-mt.co.kr###aside
+||mt.co.kr##.photovod
+||mt.co.kr###spotnews
+||mt.co.kr###aside
+||mt.co.kr##.related
+||mt.co.kr##.conbox3
 
 !! ytn.co.kr
-ytn.co.kr##.news_slide
-ytn.co.kr##.photo_news
+||ytn.co.kr##.news_slide
+||ytn.co.kr##.photo_news
 ||img.event.ytn
+! ytn 쪽 대행사
 ^cdnfootball^
 
 !! sbs
-sbs.co.kr##.end_footcont_w
+##.end_footcont_w$domain=||sbs.co.kr
 
 !! asiae.co.kr
 asiae.co.kr###aside
 asiae.co.kr##.pop_add
 
 !! hani.co.kr
-!!hani.co.kr##.slide_mid
-hani.co.kr##.hani_ranking_slide
-hani.co.kr##.huffingtonpost
+||hani.co.kr##.slide_mid
+||hani.co.kr##.hani_ranking_slide
+||hani.co.kr##.huffingtonpost
+^article.js$domain=m.hani.co.kr|hani.co.kr
+
+!! chosun.com
+||chosun.com##.art_ad_promo_ifbox
+||chosun.com##iframe
+||chosun.com##.news_comment
+
+
+!! 경향
+||khan.co.kr##.art_side
+||khan.co.kr##.mc2
 
 !! 데일리안
-photonews_js.js
-dailian.co.kr###view_bot_news
-dailian.co.kr###view_morenews
-dailian.co.kr###side_photo
-dailian.co.kr##.responsive_col2
+^photonews_js.js
+||dailian.co.kr###view_bot_news
+||dailian.co.kr###view_morenews
+||dailian.co.kr###side_photo
+||dailian.co.kr##.responsive_col2
 
 !! etnews.com
 ||etnews.com###right
 ||etnews.com##.top_ad
 ||etnews.com##.relBottom
-
 ##.nnews_bottomadlist_area
 ##.sub_viewpag_headline
 ###webtoon_todaywrap
 
-heraldcorp.com##.right_side_section
-heraldcorp.com##.youtube
-heraldcorp.com###head_section
-heraldcorp.com##.infor_area
+||heraldcorp.com##.right_side_section
+||heraldcorp.com##.youtube
+||heraldcorp.com###head_section
+||heraldcorp.com##.infor_area
 
 !! 문화일보
-munhwa.com###news_content>div
-
-
-!================================================================================
-! 모바일 사이트별 시각적 필터 모음
-!================================================================================
-###moveTop
-##.fixed1
-
-!! 연합뉴스
-ytn.co.kr##.hide-appview
-ytn.co.kr##.circle_button
-ytn.co.kr###circle_button
-
-!! 한겨레 (얘네도 좀 노답)
-^article.js$domain=m.hani.co.kr|hani.co.kr
-
-!! mt.co.kr
-mt.co.kr##.related
-mt.co.kr##.conbox3
-
-!! chosun.com
-chosun.com##.art_ad_promo_ifbox
-chosun.com##iframe
-chosun.com##.news_comment
-
-
-!! 경향
-khan.co.kr##.art_side
-khan.co.kr##.mc2
-
-!! 미디어펜
-mediapen.com##.hdline
+||munhwa.com###news_content>div
 
 !! 국민일보
-kr##.best_pht
-kr##.mo_bnr
-kr##.nwbx02
+^kr##.best_pht
+^kr##.mo_bnr
+^kr##.nwbx02
+^kr##.ban
 ###waveAd
 ##.list_sns
-kr##.ban
+
+!! 미디어펜
+||mediapen.com##.hdline
 
 !! 파이낸셜 뉴스
 ||fnnews.com
@@ -246,10 +229,16 @@ kr##.ban
 ||fnnews.com##.bg_borderTop
 
 !! 충청투데이
-!.kr##.m_aside
-
+.kr##.m_aside
 !! 투데이에너지
-!.kr##.container_right
+.kr##.container_right
+
+!================================================================================
+! 모바일 사이트별 공통 시각적 필터 모음
+!================================================================================
+###moveTop
+##.fixed1
+
 
 ! 화이트 리스트
 @@$domain=||live.com
