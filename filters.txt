@@ -1,68 +1,81 @@
 ! vi: filetype=abp nu colorcolumn=
-! Title: sooop's private filter 0923-002
-! Version: 20160923002
+! Title: sooop's private filter
+! Version: 20161024.001
 
 
 ! 광고회사들 서버
 ||58.120.226.147
-||58.120.226.147
-||ti-center.co.kr
-^2beon^
-^ad2^
-^adinc^
-^adistory^
-^adkova^
-^adnmore^
-^adnxs^
-^adpingpong*^
-^adpnut^
-^ads-^
-^ads-optima^
-^adsrvr^
-^adv.
-^cad.chosun^
-^cauly^
-^chosun.com/event
-^heraldm^
-^imadrep^
-^interworksmedia^
-^luxad^
-^mangouni^
-^mklaud.com^
-^mman^
-^mmnneo^
-^mncmedia^
-^mymyad^
-^nearad.chosun^
-^nowcall^
-^ntwoad^
-^obel^
-^outbanner.hu^
-^priel^
-^reople^
-^sunnyworks^
-^sndkorea^
-^teads^
-^tidaltv^
-^toast.com/ad^
-^exchange.toast
-about.co.kr$script,subdocument
+||2beon^
+||ad2^
+||ad.adinc.kr^
+||adistory^
+||adkova^
+||adnmore^
+||adnxs^
+||adpingpong*^
+||adpnut^
+||ads-^
+||ads-optima^
+||adsrvr^
+||adv.
+||cad.chosun^
+||cauly^
+||chosun.com/event
+||gstatic^
+||heraldm^
+||imadrep^
+||interworksmedia^
+||luxad^
+||mangouni^
+||mklaud.com^
+||mman^
+||mmnneo^
+||mncmedia^
+||mymyad.co.kr^
+||nearad.chosun^
+||nowcall^
+||ntwoad^
+||obel^
+||outbanner.hu^
+||priel^
+||reople^
+||sunnyworks^
+||sndkorea^
+||teads^
+||tidaltv^
+||toast.com/ad^
+||exchange.toast^
+||about.co.kr$script,subdocument
 ^akamaihd.net^$domain=~www.facebook.com
-^keywordsconnect^
+#daum*ad
+#daumcdn*ad
+||hnscom.com
+||keywordsconnect^
+ti-center.co.kr
 ^icontact.kr^
 ^youtube_iframe^
 
+
+
 !================================================================================
 ! 뭐하는 덴지 모름
-!================================================================================ !! 다음광고?
+!================================================================================
+||ad.reople.co.kr^
+||js.theprimead.co.kr^
+
+!================================================================================
+! 뭐하는 덴지 모름
+!================================================================================ 
+!! 다음광고?
 ^zumst^
 ||ad*.zum^
 ||shopping.zum^$subdocument
 ||about.co.kr&subdocument
 ||mediaview.co.kr
-! 다음 cdn 광고는 주소 분석 후 패턴 다시 만들자.
-!daumcdn*ad*js^
-!daum*ad
+||image2play.com
+||adex.ednplus.com^
+||neops.co.kr^
+
 
 !! 언론사 자체 광고서버
 ||ad.hani^
@@ -84,14 +97,13 @@ acecounter*.php
 !================================================================================
 ||platform.twitter.com/widgets$subdocument
 ||developers.kakao.com
-||api.nateon.nate.com
-||dawin.tv
-||livere.co.kr
+||api.nateon.nate.com^
+||dawin.tv^
+||livere.co.kr^
 
 !================================================================================
 ! iframe 차단목록
 !================================================================================
-! .kr##iframe[src]
 inews24.com##iframe[src]
 heraldcorp.com##iframe[src]
 
@@ -114,133 +126,153 @@ heraldcorp.com##iframe[src]
 !================================================================================
 ! 한국 언론 사이트별 시각적 필터 모음
 !================================================================================
+! naver 
+||naver.com##iframe.shop_cast
+
+
 !! wikitree
-||wikitree.co.kr##.shareMenu
-||wikitree.co.kr##.categoryMenu
-||wikitree.co.kr.kr##.comment
-||wikitree.co.kr##.retweet
+wikitree.co.kr##.shareMenu
+wikitree.co.kr##.categoryMenu
 
 
 !! etnews
-||etnews.com###left2
-||etnews.com###bannerTopmostBox
-||etnews.com###right
-||etnews.com##.top_ad
-||etnews.com##.relBottom
+etnews.com###left2
 
 
 !! 한국경제
-||wowtv.co.kr##.body_content
-||wowtv.co.kr##.wrap-issueplus
+wowtv.co.kr##.body_content
+##.wrap-issueplus
 ^photoslide_
 
 !! 헤럴드경제
-||res.heraldm.com$subdocument,image
+res.heraldm.com$subdocument,image
 
 !! 디지털타임즈
-||dt.co.kr##.subSct
-||dt.co.kr##.subCnt
-||dt.co.kr##.aside
+dt.co.kr##.subSct
+dt.co.kr##.subCnt
+dt.co.kr##.aside
 
 !! 아이뉴스(노답)
 inews24.com##iframe
 
 !! 연합뉴스
-||##.hide-appview
-||ytn.co.kr##.hide-appview
-||ytn.co.kr##.circle_button
-||ytn.co.kr###circle_button
-
+##.hide-appview
 
 !! mt.co.kr
-||mt.co.kr##.photovod
-||mt.co.kr###spotnews
-||mt.co.kr###aside
-||mt.co.kr##.related
-||mt.co.kr##.conbox3
+||file.osen.co.kr/thumb
+mt.co.kr##.photovod
+mt.co.kr##.photoSlide
+mt.co.kr##.photoShot
+mt.co.kr##.majorNews
+mt.co.kr##.fortuneBox
+mt.co.kr###spotnews
+mt.co.kr###aside
+mt.co.kr###aside2
+
+! 국민일보
+kmib.co.kr/clipImage^
+kmib.co.kr##.side_ifm_area
+kmib.co.kr##.nws_best_gall
+kmib.co.kr##.best_nw
+kmib.co.kr$subdocument,script
+
+! 중앙일보
+news.joins.com##.comment_area
+news.joins.com^###comment
+joins.com###secondary
+
+! 한국경제
+www.hankyung.com###aside
+www.hankyung.com##.col-690
+||popin.cc^
 
 !! ytn.co.kr
-||ytn.co.kr##.news_slide
-||ytn.co.kr##.photo_news
-||img.event.ytn
-! ytn 쪽 대행사
-^cdnfootball^
+ytn.co.kr$subdocument
+ytn.co.kr##.news_slide
+ytn.co.kr##.photo_news
+ytn.co.kr###aside
+ytn.co.kr##div[class^=sub]
+ytn.co.kr##div[class^=newsview]
+||img.event.ytn^
+||cdnprism.pandora.tv^
+
+! 매일 경제
+mk.co.kr$script,subdocument
+mk.co.kr##.right_aside
+mk.co.kr##.ad_viewrolling
+
+
+! 블로터
+bloter.net$subdocument,script
+bloter.net###focus__container
+bloter.net###single-udemy__container
+bloter.net###bloter-plus__container
+
+! 동아일보
+||smartmediarep.com^
+||cad.donga.com^
+||staticflickr.com^
+||donga.autobrain.net^
+||big-toon.com^
+news.donga.com$subdocument,script
+news.donag.com###aside
+news.donag.com###todayDonga
+news.donga.com###notice_banner
+||spintop.donga.com
+
+! 오마이
+http://www.ohmynews.com$subdocument,script
+www.ohmynews.com###ctl00_cphNWS_dvGal
+www.ohmynews.com###content_wrap > .content > .newswrap > .news_body > .report-banner
+www.ohmynews.com###ctl00_dvWing
 
 !! sbs
-##.end_footcont_w$domain=||sbs.co.kr
+sbs.co.kr##.end_footcont_w
 
 !! asiae.co.kr
 asiae.co.kr###aside
 asiae.co.kr##.pop_add
 
 !! hani.co.kr
-||hani.co.kr##.slide_mid
-||hani.co.kr##.hani_ranking_slide
-||hani.co.kr##.huffingtonpost
-^article.js$domain=m.hani.co.kr|hani.co.kr
+hani.co.kr$script
+hani.co.kr##.slide_mid
+hani.co.kr##.a-right
+hani.co.kr##.hani_ranking_slide
+hani.co.kr##.huffingtonpost
+hani.co.kr##.photo-list
+hani.co.kr###foot-fix-margin
 
-!! chosun.com
-||chosun.com##.art_ad_promo_ifbox
-||chosun.com##iframe
-||chosun.com##.news_comment
+! 프레시안
+www.pressian.com$subdocument,script
+www.pressian.com##.remove_ad
+www.pressian.com##.section_v2_3
+||icontact.kr^
+||web.n2s.co.kr^
 
-
-!! 경향
-||khan.co.kr##.art_side
-||khan.co.kr##.mc2
 
 !! 데일리안
-^photonews_js.js
-||dailian.co.kr###view_bot_news
-||dailian.co.kr###view_morenews
-||dailian.co.kr###side_photo
-||dailian.co.kr##.responsive_col2
+photonews_js.js
+dailian.co.kr###view_bot_news
+dailian.co.kr###view_morenews
+dailian.co.kr###side_photo
+dailian.co.kr##.responsive_col2
 
 !! etnews.com
-||etnews.com###right
-||etnews.com##.top_ad
-||etnews.com##.relBottom
+etnews.com###right
+##.top_ad
+etnews.com##.relBottom
+
+!! 헤럴드경제 (초 노답이다. 이거 어떻게 해야할지 답이 안옴)
 ##.nnews_bottomadlist_area
 ##.sub_viewpag_headline
 ###webtoon_todaywrap
-
-||heraldcorp.com##.right_side_section
-||heraldcorp.com##.youtube
-||heraldcorp.com###head_section
-||heraldcorp.com##.infor_area
+heraldcorp.com##.right_side_section
+heraldcorp.com##.youtube
+heraldcorp.com###head_section
+heraldcorp.com##.infor_area
 
 !! 문화일보
-||munhwa.com###news_content>div
-
-!! 국민일보
-^kr##.best_pht
-^kr##.mo_bnr
-^kr##.nwbx02
-^kr##.ban
-###waveAd
-##.list_sns
-
-!! 미디어펜
-||mediapen.com##.hdline
-
-!! 파이낸셜 뉴스
-||fnnews.com
-||fnnews.com##.hot_photo
-||fnnews.com##.bg_borderTop
-
-!! 충청투데이
-.kr##.m_aside
-!! 투데이에너지
-.kr##.container_right
-
-!================================================================================
-! 모바일 사이트별 공통 시각적 필터 모음
-!================================================================================
-###moveTop
-##.fixed1
+munhwa.com###news_content>div
 
 
-! 화이트 리스트
-@@$domain=||live.com
-@@$domain=||google.com
-@@$domain=||instapapaer.com
+www.naver.com###column_bottom > .shopping_cast
