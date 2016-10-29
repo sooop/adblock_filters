@@ -1,6 +1,6 @@
 ! vi: filetype=abp nu colorcolumn=
 ! Title: sooop's private filter
-! Version: 20161024.001
+! Version: 20161030.001
 
 
 ! 광고회사들 서버
@@ -46,9 +46,7 @@
 ||toast.com/ad^
 ||exchange.toast^
 ||about.co.kr$script,subdocument
-^akamaihd.net^$domain=~www.facebook.com
-#daum*ad
-#daumcdn*ad
+#^akamaihd.net^$domain=~www.facebook.com
 ||hnscom.com
 ||keywordsconnect^
 ti-center.co.kr
