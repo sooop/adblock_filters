@@ -1,13 +1,14 @@
+
 [Adblock Plus 2.0]
 ! vi: filetype=abp nu colorcolumn=
 ! Title: sooop's private filter
+! Expires: 7 days
 ! Version: 20161030.001
 
 
 ! AD Agency
 ||58.120.226.147
 ||2beon^
-||ad2^
 ||ad.adinc.kr^
 ||adistory^
 ||adkova^
@@ -20,7 +21,9 @@
 ||adsrvr^
 ||adv.
 ||cad.chosun^
-||cauly^
+||cauly.net^
+||cauly.co.kr^
+||cauly.com^
 ||chosun.com/event
 ||gstatic^
 ||heraldm^
@@ -47,12 +50,12 @@
 ||toast.com/ad^
 ||exchange.toast^
 ||about.co.kr$script,subdocument
-#^akamaihd.net^$domain=~www.facebook.com
+||akamaihd.net^$domain=~www.facebook.com
 ||hnscom.com
 ||keywordsconnect^
-ti-center.co.kr
-^icontact.kr^
-^youtube_iframe^
+||ti-center.co.kr
+||icontact.kr^
+||youtube_iframe^
 
 !================================================================================
 ! NamuWiki Blocking Sidebar
@@ -69,8 +72,9 @@ ti-center.co.kr
 ||shopping.zum^$subdocument
 ||about.co.kr&subdocument
 ||mediaview.co.kr
-||image2play.com
-||adex.ednplus.com^
+||image2play.com^
+||ednplus.com^
+||emsplaus.com^
 ||neops.co.kr^
 
 
@@ -268,5 +272,6 @@ heraldcorp.com##.infor_area
 !! 문화일보
 munhwa.com###news_content>div
 
-
+!! 네이버
 www.naver.com###column_bottom > .shopping_cast
+
