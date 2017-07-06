@@ -7,55 +7,62 @@
 
 
 ! AD Agency
-||58.120.226.147
-||2beon^
+^2beon^
+^adistory^
+^adkova^
+^adnmore^
+^adnxs^
+^adpingpong*^
+^adpnut^
+^ads-^
+^ads-optima^
+^adsrvr^
+^adv.
+^gstatic^
+^heraldm^
+^imadrep^
+^luxad^
+^mangouni^
+^mman^
+^mmnneo^
+^mncmedia^
+^nowcall^
+^ntwoad^
+^obel^
+^priel^
+^reople^
+^sndkorea^
+^sunnyworks^
+^teads^
+^tidaltv^
+^youtube_iframe^
+||58.120.226.147^
+||about.co.kr$script,subdocument
 ||ad.adinc.kr^
-||adistory^
-||adkova^
-||adnmore^
-||adnxs^
-||adpingpong*^
-||adpnut^
-||ads-^
-||ads-optima^
-||adsrvr^
-||adv.
+||akamaihd.net^$domain=~www.facebook.com
 ||cad.chosun^
-||cauly.net^
 ||cauly.co.kr^
 ||cauly.com^
+||cauly.net^
 ||chosun.com/event
-||gstatic^
-||heraldm^
-||imadrep^
+||ednplus.com^
+||emsplus.com^
+||exchange.toast^
+||hnscom.com
+||icontact.kr^
+||image2play.com^
 ||interworksmedia^
-||luxad^
-||mangouni^
+||js.theprimead.co.kr^
+||keywordsconnect^
+||mediaview.co.kr
 ||mklaud.com^
-||mman^
-||mmnneo^
-||mncmedia^
 ||mymyad.co.kr^
 ||nearad.chosun^
-||nowcall^
-||ntwoad^
-||obel^
+||neops.co.kr^
 ||outbanner.hu^
-||priel^
-||reople^
-||sunnyworks^
-||sndkorea^
-||teads^
-||tidaltv^
-||toast.com/ad^
-||exchange.toast^
-||about.co.kr$script,subdocument
-||akamaihd.net^$domain=~www.facebook.com
-||hnscom.com
-||keywordsconnect^
+||smp.lc^
 ||ti-center.co.kr
-||icontact.kr^
-||youtube_iframe^
+||toast.com/ad^
 
 !================================================================================
 ! NamuWiki Blocking Sidebar
@@ -66,22 +73,17 @@
 !================================================================================
 ! Don't kwow
 !================================================================================
-||ad.reople.co.kr^
-||js.theprimead.co.kr^
+||about.co.kr^&subdocument
 ||ad*.zum^
+||ad.reople.co.kr^
 ||shopping.zum^$subdocument
-||about.co.kr&subdocument
-||mediaview.co.kr
-||image2play.com^
-||ednplus.com^
-||emsplaus.com^
-||neops.co.kr^
+||hotcast.kr^$script
+||castbox.shopping.naver.com/shopbox/main.nhn^$subdocument
 
 
-!! News 
+!! News
 ||ad.hani^
-
-acecounter*.php
+^acecounter*.php^
 
 !================================================================================
 ! API, SDK - Social
@@ -124,18 +126,14 @@ heraldcorp.com##iframe[src]
 !================================================================================
 ! 한국 언론 사이트별 시각적 필터 모음
 !================================================================================
-! naver 
-||naver.com##iframe.shop_cast
-
+! naver
 
 !! wikitree
 wikitree.co.kr##.shareMenu
 wikitree.co.kr##.categoryMenu
 
-
 !! etnews
 etnews.com###left2
-
 
 !! 한국경제
 wowtv.co.kr##.body_content
@@ -274,4 +272,3 @@ munhwa.com###news_content>div
 
 !! 네이버
 www.naver.com###column_bottom > .shopping_cast
-
