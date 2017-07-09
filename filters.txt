@@ -272,3 +272,38 @@ munhwa.com###news_content>div
 
 !! 네이버
 www.naver.com###column_bottom > .shopping_cast
+
+!! 
+||bloter.net##.denim-layout--adjust-width.denim-layout--width.article--body__wrapper > .denim-layout--pannel__container > .is-hidden--tablet.is-hidden--mobile.sidebar-direction--right.denim-layout--sidebar
+||castbox.shopping.naver.com/shopbox/main.nhn?svgless=true$subdocument
+||cauly.co.kr^
+||cauly.net^
+||donga.com###aside
+||donga.com###kind_con
+||donga.com##.aside
+||donga.com##.bestview_news
+||donga.com##.hot_click
+||donga.com##.pictorial.photo_view_list
+||donga.com##.reply
+||donga.com##.today_sportnews
+||donga.com##.view_foot
+||donga.com##iframe[src]
+||esmplus.com
+||hotcast.kr$script
+||image.zdnet.co.kr/banner/$image
+||img.sedaily.com/Html/singleUse$image
+||img.sedaily.com/web/ad^$image
+||inews24.com###roll
+||inews24.com##.container > table > tbody > tr > td:nth-of-type(2)
+||inews24.com##.sub_cotent
+||iwmedia^
+||joins.com###sub
+||joins.com##.photo_video
+||kmib.co.kr##.timgnws
+||sedaily.com###v-right
+||sedaily.com##.view_left.view_cate
+||ytn.co.kr###ajaxGisaSubList
+||zdnet.co.kr##.mb_20.clfx
+||zdnet.co.kr##.related_a
+||zdnet.co.kr##.right_cont
+
